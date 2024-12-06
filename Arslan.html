@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio Website">
+    <title>My Portfolio</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 80px 20px;
+            min-height: 100vh;
+        }
+
+        .home {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
+            text-align: center;
+        }
+
+        .home h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .about, .portfolio, .contact {
+            background: #f4f4f4;
+        }
+
+        .about h2, .portfolio h2, .contact h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .portfolio .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .portfolio .project {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact form input, 
+        .contact form textarea, 
+        .contact form button {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <h1>Welcome to My website. </h1>
+        <p>follow @vibe_with_arslan for music videos on tiktok</p>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Arsalan, i read in class 9th and my dream is to become a billionaire.I specialize in coding.</p>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>My dreams</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>learn full coding</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>buy a supra RATATA .</p>
+            </div>
+            <div class="project">
+                <h3>Project 3</h3>
+                <p>be a billionaire</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="ARSALAN" required>
+            <input type="number" name="numner" placeholder="03288664894" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; don't forget to follow my tiktok @vibe_with_arslan --okie bye</p>
+    </footer>
+</body>
+</html>
